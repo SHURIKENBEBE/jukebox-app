@@ -1,0 +1,31 @@
+[
+    {"name": "Chosen",
+    "artist": "Dua Saleh",
+    "genre": "R&B, Soul"
+    },
+
+    {"name": "Baby Blue",
+    "artist": "Audrey Nuna",
+    "genre": "HIP HOP/RAP"
+    },
+
+    {"name": "Relax & Run",
+    "artist": "Blood Orange ft. Erika de Casier & Eva Tolkin",
+    "genre": "Alternative"
+    },
+
+    {"name": "ShoreditchSwing",
+    "artist": "GOLD, Le Mav & Tay Iwar",
+    "genre": "Pop"
+    },
+
+    {"name": "Butterflies",
+    "artist": "Andy Stott",
+    "genre": "Electronic"
+    },
+
+    {"name": "Sober",
+    "artist": "Childish Gambino",
+    "genre": "Neo-Soul"
+    }
+]

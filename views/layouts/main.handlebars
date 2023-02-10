@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONLINE MIXTAPE GENERATOR</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Notable&family=Orbitron:wght@700;900&family=Press+Start+2P&family=Quantico:ital@0;1&family=Sarpanch:wght@400;600;900&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header>
+      <h1>
+        <a href="/">ONLINE JUKEBOX GENERATOR!</a>
+      </h1>
+
+
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
+
+    <div class="img-container">
+      <img src="../../public/jukeicon.png" alt="jukebox icon">
+    </div>
+
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+
+    <footer>
+      <p> SHURIKEN BEBE 2023</p>
+    </footer>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="./js/login.js"></script>
+  {{/if}}
+</body>
+
+</html>

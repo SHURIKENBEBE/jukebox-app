@@ -1,0 +1,103 @@
+:root{
+    --main-color: #66bfbf;
+    --color1: #defcf9; 
+    --color2: #cadefc; 
+    --color3: #c3bef0; 
+    --color4: #cca8e9; 
+    --color5: #6892d5;
+    --color6: #f8fcfb;
+    --color7: #FFE15D;
+    --color8: #F5EA5A;
+    --font1: 'Notable', sans-serif;
+    --font2: 'Orbitron', sans-serif;
+    --font3: 'Press Start 2P', cursive;
+    --font4: 'Quantico', sans-serif;
+    --font5: 'Sarpanch', sans-serif;
+    --font6: 'Share Tech Mono', monospace;
+    --font7: 'VT323', monospace;
+
+}
+
+header{
+  display: block;
+  text-align: center;
+}
+
+h1{
+    display: flex;
+    color: var(--color6);
+    margin: 50px;
+    font-family: var(--font3);
+
+    
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #cadefc;
+    font-family: var(--font4);
+    margin: 20px;
+
+}
+
+nav{
+  text-align: center;
+  font-size: larger;
+}
+
+a{
+  color: var(--color1);
+  text-shadow: -1px -1px 0 var(--color4), 1px -1px 0 var(--color8), -1px 1px 0 var(--color3), 1px 1px 0 var(--color2);
+
+}
+
+
+li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 4px;
+    padding: 4px;
+    list-style: none
+    }
+    .midlaner {background-color: #eeeeee}
+    .toplaner {background-color: #ffea00}
+
+
+
+      
+      .no-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        color: #1b89bc;
+        text-decoration: none;
+        font-size: 100%;
+      }
+      
+      .no-button:hover {
+        color: #065b83;
+        text-decoration: underline;
+      }
+      
+      .dollar-amount {
+        color: #056605;
+        font-weight: bold;
+        margin-left: -5px;
+      }
+      
+footer{
+  text-align: center;
+  margin-bottom: 5px;
+  display: block;
+  }
+
+
+  .img-container{
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    max-width: 50%;
+    height: auto;
+  }
