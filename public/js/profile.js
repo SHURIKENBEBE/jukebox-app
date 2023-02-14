@@ -6,7 +6,7 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#genre').value.trim();
   
     if (name && artist && genre) {
-      const response = await fetch(`/api/song`, {
+      const response = await fetch(`/api/songs`, {
         method: 'POST',
         body: JSON.stringify({ name, artist, genre }),
         headers: {
@@ -26,7 +26,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/song/${id}`, {
+      const response = await fetch(`/api/songs/${id}`, {
         method: 'DELETE',
       });
   
