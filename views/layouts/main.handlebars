@@ -16,24 +16,24 @@
   <div class="flex-column justify-space-around">
     <header>
       <h1>
-        <a href="/">ONLINE JUKEBOX GENERATOR!</a>
+        <a href="/" class="title">ONLINE JUKEBOX GENERATOR!</a>
       </h1>
 
+      <div class="img-container">
+        <img src="/jukeicon.png" alt="jukeicon.png">
+      </div>
 
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile" class="log">profile</a> |
+        <button class="no-button log" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="log">login</a>
         {{/if}}
       </nav>
     </header>
 
-    <div class="img-container">
-      <img src="../../public/jukeicon.png" alt="jukebox icon">
-    </div>
 
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->

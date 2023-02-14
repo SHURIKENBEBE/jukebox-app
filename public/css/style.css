@@ -46,12 +46,17 @@ nav{
   font-size: larger;
 }
 
-a{
+a.title{
   color: var(--color1);
   text-shadow: -1px -1px 0 var(--color4), 1px -1px 0 var(--color8), -1px 1px 0 var(--color3), 1px 1px 0 var(--color2);
 
 }
 
+a{
+  color: var(--color6);
+  text-shadow: -1px -1px 0 var(--color2), 1px -1px 0 var(--color3), -1px 1px 0 var(--color8), 1px 1px 0 var(--color2);
+
+}
 
 li {
     font-size: 2rem;
@@ -94,10 +99,11 @@ footer{
   }
 
 
-  .img-container{
-    display: block;
-    margin-left: 50%;
-    margin-right: 50%;
-    max-width: 50%;
-    height: auto;
-  }
+img{
+  padding: 50px;
+  max-width: 50%;
+}
+
+.log{
+  font-size: 200%;
+}
